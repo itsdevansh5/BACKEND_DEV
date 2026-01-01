@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base
 from database import engine
 Base=declarative_base()
 
-class users(Base):
+class Users(Base):
     __tablename__="users"
 
 
@@ -11,4 +11,4 @@ class users(Base):
     username=Column(String)
     age=Column(Integer)
 
-Base.metadata.create_all(bind=engine)
+

@@ -4,3 +4,9 @@ class UserCreate(BaseModel):
     username:str
     age:int
 
+class ReturnUser(BaseModel):
+    id:int
+    username:str
+    age:int
+    class Config:
+        orm_mode=True
